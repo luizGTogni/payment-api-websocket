@@ -12,3 +12,5 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = getenv("FLASK_SECRET_KEY")
 
 db = SQLAlchemy(app)
+
+from src.routes import create_payment_pix, get_qrcode_pix
